@@ -1,0 +1,71 @@
+body {
+  font-family: "Arimo", sans-serif;
+  margin: 0 auto;
+}
+
+body { background: rgba(30, 11, 97, 0.562);
+   }
+
+
+#wrapper {
+  width: 70%;     /* specify a width! */
+  margin: 0 auto; /* center */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 4rem;
+  background-color: #b2c0;
+  background-image: linear-gradient(to top, #000000a6 0%, #544d72 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+h5{
+  font-size: 0.9rem;
+}
+
+p{
+  color: rgba(11, 11, 48, 0.521);
+}
+
+div#buttons *{display:inline}
+
+
+@media screen and (max-width: 960px) {
+  .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+  }
+
+  @media screen and (max-width: 960px) {
+    .services {
+        height: 1600px;
+    }
+
+
+    @media screen  and (max-width: 480px) {
+      .services {
+          height: 1400px;
+      }
