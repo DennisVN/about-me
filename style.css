@@ -29,7 +29,7 @@ h1 {
   margin: 0 auto;
   font-size: 4rem;
   background-color: #b2c0;
-  background-image: linear-gradient(to top, #000000a6 0%, #544d72 100%);
+  background-image: linear-gradient(to top, #9c168aad 0%, #544d72 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -47,11 +47,35 @@ p{
 
 div#buttons *{display:inline}
 
+@media screen and (min-width: 1080px) {
+  body {
+    background-color: rgba(11, 119, 207, 0.568);
+    display: block;
+    position: static;
+    z-index: auto;
+    width: 100%;
+  }
+  .resize {
+    width: 750px;
+    height: auto;
+  }
+  h1 {
+    background-color: teal;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+}
 
-@media screen and (max-width: 1025px) {
+
+@media screen and (max-width: 1148px) and (min-width: 961px) {
+  .resize {
+    width: 600px;
+    height: auto;
+  }
   .wrapper {
     box-sizing: content-box;
-    display: flex;
+    display: block;
     justify-content: space-between;
     height: 80px;
     z-index: 1;
@@ -59,9 +83,17 @@ div#buttons *{display:inline}
     max-width: 1300px;
     padding: 0;
   }
+  h1 {
+    font-size: 3.8rem;
+    margin: 0 auto;
+    background-color: rgba(99, 99, 93, 0.356);
+    background-color: rgba(194, 207, 5, 0.753);
+    background-image: linear-gradient(to top, #f1e31a 0%, #f0ff23ad 100%);
+  }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 481px) {
+/* afblijven*/
+@media screen and (max-width: 960px) and (min-width: 481px) {
   .wrapper {
     box-sizing: content-box;
     display: flex;
@@ -75,24 +107,39 @@ div#buttons *{display:inline}
   body {
     background-color: rgba(233, 150, 122, 0.603);
   }
+
+  .resize {
+    width: 450px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
 }
 
     
     
-
+/* afblijven*/
 @media screen  and (max-width: 480px) {
-  .wrapper {
-    box-sizing: content-box;
-    display: flex;
-    float: none;
-    width: 100%;
-  }
-  .h1 {
-    font-size: 28px;
+  h1 {
+    font-size: 2.8rem;
+    margin: 0 auto;
+    background-color: rgba(99, 99, 93, 0.356);
+    background-color: rgb(255, 153, 0);
+    background-image: linear-gradient(to top, #ff0707a1 0%, #ff2002 100%);
   }
   body {
-    background-color: rgba(255, 20, 145, 0.555);
+    background-color: rgba(139, 141, 137, 0.603);
+    display: block;
+    position: static;
+    z-index: auto;
+    width: 100%;
+    z-index: auto;
+  }
+
+  .resize {
+    width: 300px;
+    height: auto;
   }
 }
-
-      
